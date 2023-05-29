@@ -33,6 +33,10 @@ header {
     font-weight: 700;
 }
 
+.header-li-a-border:hover {
+    border-bottom: 1px solid #0067e0;
+}
+
 .header-menu-arrow {
     display: flex;
     justify-content: center;
