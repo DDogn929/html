@@ -1,0 +1,151 @@
+
+a {
+    color: #313131;
+    text-decoration: none;
+}
+
+header {
+    padding: 0 12px;
+    margin: 0 auto;
+    background-color: #f6f8fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+	background: url('../Image/로고및아이콘.png') no-repeat 0 -98px;
+	width: 78px;
+	height: 29px;
+}
+
+.header-menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+.header-menu {
+    color: #777777;
+    font-size: 14px;
+}
+
+.header-menu:hover {
+    border-bottom: 1px solid #777777;
+}
+
+.header-login {
+    width: 90px;
+    height: 35px;
+    background-color: rgb(64, 165, 64);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-login {
+    background-color: #f6f8fa;
+    padding:  0 12px;
+    margin: 0 auto;
+    /* width: 1000px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.title-img {
+    width: 530px;
+    height: 685px;
+    background-image: url(../Image/밴드모바일.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.title-login-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title-login-h1 {
+    font-size: 48px;
+}
+
+.title-login-button-1 {
+    width: 350px;
+    height: 50px;
+    color: white;
+    background-color: rgb(64, 165, 64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.title-login-button-2 {
+    width: 350px;
+    height: 50px;
+    color: #525252;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b6b6b6;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.title-login-text {
+    color: #525252;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.title-login-text_link {
+    color: rgb(64, 165, 64);
+    border-bottom: 1px solid rgb(64, 165, 64);
+    margin: 0 10px;
+}
+
+.title_2-img {
+    height: 550px;
+    background-image: url(../Image/이야기하는사람들.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    text-align: center;
+}
+
+.title_2-h2 {
+    font-size: 48px;
+}
+
+.title_2-text {}
+
+main {
+    padding: 0 12px;
+    margin: 0 auto;
+    background-color: #f6f8fa;
+}
+
+.main-section-menu-background {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-section-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
