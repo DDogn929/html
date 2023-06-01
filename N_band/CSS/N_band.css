@@ -285,18 +285,19 @@ main {
 .main-section-sidemenu-list {
     /* padding: 10px; */
     /* border: 1px solid black; */
-    /* width: 500px;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px; */
-}
 
-.main-section-sidemenu-button {
     width: 500px;
     height: 100px;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+}
+
+.main-section-sidemenu-button {
+    /* width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between; */
 }
 
 .main-section-sidemenu-Image {
@@ -316,7 +317,7 @@ main {
 }
 
 .main-section-sidemenu-TL {
-    width: 100%;
+    width: 400px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -338,6 +339,11 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.main-section-sidemenu-Maintitle:hover {
+    text-decoration: underline !important;
+    text-decoration-color: var(--font-color-1) !important;
 }
 
 .main-section-sidemenu-text {
@@ -451,23 +457,46 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    gap: 10px;
+    gap: 18px;
+    font-size: 14px;
 }
 
 .footer-menu-list {
     display: flex;
     justify-content: left;  
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 18px;
 }
 
 .footer-menu-list-text {
     color: var(--footer-color-1);
+    position: relative;
 }
 
-.footer-menu-text-bord {
+.footer-bord {
     color: var(--footer-color-2);
     font-weight: 600;
+}
+
+.footer-menu-list-text::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--footer-color-1);
+    position: absolute;
+    top: 8px;
+    right: -10px;
+}
+
+.footer-menu-list-text:last-child::after{
+    /* display: none; */
+}
+
+.footer-menu-list > li > a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--footer-color-1);
 }
 
 .footer-menu-text {
@@ -522,6 +551,10 @@ footer {
         align-items: center;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .footer-menu-list-text::after {
+        display: none;
     }
 
     .footer-menu-text{
