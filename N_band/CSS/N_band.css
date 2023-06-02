@@ -294,10 +294,13 @@ main {
 }
 
 .main-section-sidemenu-button {
-    /* width: 500px;
+    /* border: 1px solid black;
+
+    width: 500px;
     height: 100px;
     display: flex;
-    justify-content: space-between; */
+    justify-content: space-between;
+    gap: 10px; */
 }
 
 .main-section-sidemenu-Image {
