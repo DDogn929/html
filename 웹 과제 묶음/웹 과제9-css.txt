@@ -34,6 +34,14 @@ img {
     /* height: 100%; */
 }
 
+header {
+    height: 900px;
+    background-image: url(../Image/main_visual_fullscreen.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
 .header-main {
     padding: 0 36px;
     display: flex;
@@ -44,8 +52,7 @@ img {
 .socar-logo {
     color: var(--header-color);
     font-size: 26px;
-    font-weight: 900;
-    /* font-style:; */
+    font-style:;
     padding: 16px 0;
 }
 
@@ -82,19 +89,10 @@ img {
     /* transform: translate(-100%,-100%); */
 }
 
-.title-img {
-    height: 900px;
-    background-image: url(../Image/main_visual_fullscreen.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.title-h1 {
+.header-title {
     color: var(--header-color);
     font-size: 64px;
-    font-weight: 600;
-    /* font-style:; */
+    font-style:;
     text-align: center;
     line-height: 88px;
 
@@ -122,7 +120,6 @@ main {
 
 .main-list {
     /* padding: 100px 0; */
-    margin-bottom: 100px;
     height: 800px;
     display: flex;
     justify-content: center;
@@ -132,8 +129,6 @@ main {
 .list-name {
     color: var(--font-color-1);
     font-size: 36px;
-    font-weight: bold;
-    /* font-style: ; */
     margin-bottom: 30px;
     position: relative;
 }
@@ -154,8 +149,6 @@ main {
 .list-text {
     color: var(--font-color-2);
     font-size: 16px;
-    font-weight: 600;
-    /* font-style: ; */
     line-height: 24px;
     margin-bottom: 50px;
 }
@@ -167,22 +160,11 @@ main {
     height: 450px;
     background-color: #F7F8F9;
     position: relative;
-    overflow: hidden;
-}
-
-.square {
-    width: 800px;
-    height: 450px;
-    position: absolute;
-    left: 80%;
-    background-color: var(--main-color);
-    transform: skew(-25deg);
 }
 
 .member-total-view {
     color: #aaaaaa;
     font-size: 36px;
-    font-weight: 600;
     line-height: 52px;
     text-align: center;
     
@@ -198,6 +180,10 @@ main {
 
 .footer-total-view-border {
     font-weight: 900;
+}
+
+.square {
+    
 }
 
 footer {
@@ -230,8 +216,9 @@ footer {
 
 .footer-list-menu {
     display: flex;
+    /* justify-content: left; */
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     font-size: 16px;
 }
 
@@ -269,42 +256,24 @@ footer {
     bottom: 0;
 }
 
-/* .appdownlord {
-    width: 340px;
-    height: 90px;
-} */
-
 .appdownlord-button {
     width: 340px;
     height: 90px;
+    background-color: var(--main-color);
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.appdownlord-background {
-    width: 115%;
-    height: 100%;
-    position: absolute;
-    right: -15%;
-    bottom: 0%;
-    background-color: var(--main-color);
-    transform: skew(-25deg);
 }
 
 .appdownlord-icon {
     width: 60px;
     height: 60px;
     border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 1px 4px rgb(136, 136, 136);
-    z-index: 10;
 }
 
 .appdownlord-text {
     color: var(--header-color);
     font-size: 18px;
-    font-weight: 600;
     position: relative;
 }
 
@@ -319,45 +288,4 @@ footer {
     top: 50%;
     right: -30%;
     transform: translate(-50%,-50%);
-}
-
-@media screen and (max-width:800px) {
-
-    .appdownlord-container {
-        position: fixed;
-        left: 5%;
-        bottom: 0;
-    }
-
-    .appdownlord-button {
-        height: 60px;
-        justify-content: space-between ;
-        gap: 10px;
-    }
-    
-    .appdownlord-icon {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .appdownlord-text {
-        color: var(--header-color);
-        font-size: 18px;
-        font-weight: 600;
-        position: relative;
-    }
-    
-    .appdownlord-text::after {
-        content: '';
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background-image: url(../Image/arrow-down.svg);
-        background-size: cover;
-        position: absolute;
-        top: 50%;
-        right: -30%;
-        transform: translate(-50%,-50%);
-    }
-    
 }

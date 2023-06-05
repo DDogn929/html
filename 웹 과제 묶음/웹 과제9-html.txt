@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../Socar/CSS/Socar.css">
 </head>
 <body>
-    <header id="socar-header">
+    <header>
         <section class="header-main">
             <a href="#" class="socar-logo">SOCAR</a>
             <button class="header-button">
@@ -17,11 +17,8 @@
                 <div class="header-button-square button-2"></div>
             </button>
         </section>
+        <h1 class="header-title">차가 필요한<br>모든 순간, 쏘카</h1>
     </header>
-
-    <section class="title-img">
-        <h1 class="title-h1">차가 필요한<br>모든 순간, 쏘카</h1>
-    </section>
 
     <main>
         <section class="main-list-container">
@@ -84,9 +81,9 @@
                 <a href="#" class="footer-icon-img"><img src="../Socar/Image/i-blog.svg" alt="i-blog"></a>
             </div>
             
-            <div >
+            <div class="footer-list-menu">
                 <nav>
-                    <ul class="footer-list-menu">
+                    <ul>
                         <li><a href="#" class="footer-list-menu-button">회사소개</a></li>
                         <li><a href="#" class="footer-list-menu-button">인재채용</a></li>
                         <li><a href="#" class="footer-list-menu-button">나눔카</a></li>
@@ -115,8 +112,7 @@
     </footer>
     
     <section class="appdownlord-container">
-        <a href="#" class="appdownlord">
-            <div class="appdownlord-background"></div>
+        <a href="#">
             <div class="appdownlord-button">
                 <div class="appdownlord-icon"><img src="../Socar/Image/i-appicon.svg" alt="i-appicon"></div>
                 <p class="appdownlord-text">쏘카 앱 다운로드</p>
@@ -124,34 +120,5 @@
 
         </a>
     </section>
-
-
-
-    <script>
-        const header = document.getElementById('socar-header');
-        header.style.position = 'fixed';
-        header.style.top = '0';
-        header.style.width = '100%'
-        header.style.transition = '0.5s'
-        header.style.backgroundColor = 'transparent';
-        header.style.zIndex = '10';
-
-        let beforeScroll = 0;
-        window.addEventListener('scroll', () => {
-            if (beforeScroll < window.scrollY) {
-                header.style.transform = 'translateY(-100%)'
-            } else {
-                header.style.transform = 'none'
-            }
-            beforeScroll = window.scrollY;
-
-            if (window.scrollY < 100) {
-                header.style.backgroundColor = 'transparent';
-            }
-            else {
-                header.style.backgroundColor = '#FFFFFF80';
-            }
-        })
-    </script>
 </body>
 </html>
